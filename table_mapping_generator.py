@@ -74,6 +74,7 @@ def createJSON(
                     "rule-type": "transformation",
                     "rule-id": i,
                     "rule-name": i,
+                    "rule-target": "column",
                     "object-locator": {
                         "schema-name": schema,
                         "table-name": lists_of_tables[i],
@@ -93,6 +94,7 @@ def createJSON(
                     "rule-type": "transformation",
                     "rule-id": i,
                     "rule-name": i,
+                    "rule-target": "column",
                     "object-locator": {
                         "schema-name": schema,
                         "table-name": lists_of_tables[i],
@@ -108,6 +110,7 @@ def createJSON(
                     "rule-type": "transformation",
                     "rule-id": i,
                     "rule-name": i,
+                    "rule-target": "column",
                     "object-locator": {
                         "schema-name": schema,
                         "table-name": lists_of_tables[i],
