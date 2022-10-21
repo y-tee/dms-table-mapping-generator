@@ -81,7 +81,7 @@ def createJSON(
                     },
                     "rule-action": lists_of_rule_action[i],
                     "value": f"{lists_of_columns[i]}_hashed",
-                    "expression": f"hash_sha256(${lists_of_columns[i]})",
+                    "expression": f"CASE WHEN ${lists_of_columns[i]} IS NOT NULL THEN hash_sha256(${lists_of_columns[i]}) ELSE NULL END",
                     "data-type": {
                         "type": lists_of_transformed_data_type[i],
                         "length": 65,
